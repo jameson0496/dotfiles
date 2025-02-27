@@ -140,7 +140,8 @@ return {
     {
         "CRAG666/code_runner.nvim",
         keys = {
-            { "<leader>rc", "<cmd>RunCode<cr>", desc = "Run current code file" },
+            -- write file then run, how fancy
+            { "<leader>rc", ":w<cr><cmd>RunCode<cr>", desc = "Run current code file" },
         },
         config = function()
             require('code_runner').setup({

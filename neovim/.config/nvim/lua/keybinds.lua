@@ -21,10 +21,14 @@ vim.keymap.set('n', '<C-Down>', ':resize +2<CR>', opts)
 vim.keymap.set('n', '<C-Left>', ':vertical resize -2<CR>', opts)
 vim.keymap.set('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 
+vim.keymap.set('n', '<leader>vs', ':vertical split<CR>', opts)
+vim.keymap.set('n', '<leader>sp', ':split<CR>', opts)
 
+vim.keymap.set('n', '<leader>te', ':term<CR>i', opts)
 
 -------------------
 -- Terminal Mode --
 -------------------
 
-vim.api.nvim_set_keymap('t', '<Leader><ESC>', '<C-\\><C-n>', {noremap = true})
+vim.api.nvim_set_keymap('t', '<ESC>', '<C-\\><C-n>', opts)
+vim.api.nvim_set_keymap('t', '<C-w>', '<C-\\><C-n><C-w>', opts)

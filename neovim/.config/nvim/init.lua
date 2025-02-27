@@ -5,8 +5,12 @@
 --  |_| |_|\___| \___/  \_/  |_|_| |_| |_|
 --
 
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
 require('keybinds')
 require('plugins')
+--require('lsp')
 
 -- Use `:h <option>` for help
 
@@ -14,7 +18,7 @@ require('plugins')
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-vim.opt.clipboard = 'unnamedplus'
+--vim.opt.clipboard = 'unnamedplus'
 vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
 
 -- Tab --
@@ -71,8 +75,6 @@ vim.opt.runtimepath:prepend(lazypath)
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
 -- This is also a good place to setup other settings (vim.opt)
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
 
 -- Setup lazy.nvim
 require("lazy").setup("plugins", {
@@ -81,3 +83,4 @@ require("lazy").setup("plugins", {
     checker = { enabled = true, notify = false },
     change_detection = { notify = false, },
 })
+
