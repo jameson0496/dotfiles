@@ -1,0 +1,6 @@
+/home/jw/.config
+/home/jw/dotfiles
+
+# C: drive of wsl
+/mnt/c/Users/jw/OneDrive/College
+/mnt/c/Users/jw/OneDrive/College/spring25

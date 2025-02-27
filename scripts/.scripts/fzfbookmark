@@ -1,0 +1,3 @@
+#!/home/jw/.nix-profile/bin/bash
+
+cd "$(cat ~/.scripts/bookmarks.txt | sed 's/#.*//g' | sed '/^\s*$/d' | fzf)"
