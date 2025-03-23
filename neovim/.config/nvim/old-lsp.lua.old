@@ -13,15 +13,14 @@ return {
 
             -- require("mason").setup()
             -- require("mason-lspconfig").setup {
-            --     -- ensure_installed = { "lua_ls", "pyright" },
+            --     ensure_installed = { "lua_ls", "pylsp" },
+            --     --ensure_installed = { "lua_ls", "pyright" },
             -- }
             require("lspconfig").lua_ls.setup {
                 capabilities = capabilities,
             }
-            require("lspconfig").pyright.setup {
-                capabilities = capabilities,
-            }
-            require("lspconfig").nixd.setup {
+            require("lspconfig").pylsp.setup {
+            --require("lspconfig").pyright.setup {
                 capabilities = capabilities,
             }
         end,
@@ -34,21 +33,21 @@ return {
         },
         lazy = false,
         config = function()
-            local cmp = require('cmp')
-            cmp.setup({
+            require("cmp").setup {
                 snippet = {
                     expand = function(args)
                         vim.snippet.expand(args.body)
                     end,
                 },
+
                 --completion = {
                 --    autocomplete = false
                 --},
                 sources = {
-                    { name = "nvim_lsp" },
+                    { name = "nvim-lsp" },
                     { name = "buffer" },
                 },
-            })
+            }
         end,
     },
 }
