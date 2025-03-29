@@ -3,6 +3,9 @@ local opts = {
     silent = true,
 }
 
+-- unmap space so using it without leader key does nothing
+vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>')
+
 -- Use `:h vim.keymap.set()` for help
 
 -----------------
@@ -27,6 +30,12 @@ vim.keymap.set('n', '<leader>sp', ':split<CR>', opts)
 vim.keymap.set('n', '<leader>te', ':term<CR>i', opts)
 vim.keymap.set('n', '<leader>tv', ':vertical split<CR>:term<CR>i', opts)
 vim.keymap.set('n', '<leader>ts', ':split<CR> :term<CR>i', opts)
+
+vim.keymap.set('n', '<leader>cf', vim.lsp.buf.format, opts)
+vim.keymap.set('n', '<leader>cr', vim.lsp.buf.rename, { desc = 'Rename Symbol' })
+vim.keymap.set('n', '<leader>cd', vim.lsp.buf.definition, { desc = 'Goto Definition' })
+vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = 'Code Action' })
+vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Hover Documentation' })
 
 -------------------
 -- Terminal Mode --

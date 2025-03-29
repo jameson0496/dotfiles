@@ -33,6 +33,8 @@ vim.opt.wildmenu = true
 vim.opt.wildmode = 'list:longest'
 vim.opt.modeline = true
 
+vim.opt.scrolloff = 10
+
 -- UI --
 vim.opt.wrap = true
 vim.opt.wrapscan = true
@@ -48,7 +50,7 @@ vim.opt.hidden = true
 vim.opt.autoread = true
 -- vim.opt.formatoptions = 'jql' -- default is jcroql
 -- makes comment markers not auto fill on new lines https://vi.stackexchange.com/a/1985
-vim.cmd([[autocmd FileType * set fo-=r fo-=o fo-=c]]) 
+vim.cmd([[autocmd FileType * set fo-=r fo-=o fo-=c]])
 vim.opt.ruler = true
 --vim.opt.laststatus=2
 --vim.opt.statusline=%f\ %r%m
