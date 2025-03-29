@@ -33,6 +33,16 @@ return {
             }
             require("lspconfig").nixd.setup {
                 capabilities = capabilities,
+                settings = {
+                    nixd = {
+                        nixpkgs = {
+                            expr = "import <nixpkgs> { }",
+                        },
+                        formatting = {
+                            command = { "nixfmt" },
+                        },
+                    }
+                },
             }
         end,
     },
