@@ -25,6 +25,8 @@ vim.keymap.set('n', '<leader>vs', ':vertical split<CR>', opts)
 vim.keymap.set('n', '<leader>sp', ':split<CR>', opts)
 
 vim.keymap.set('n', '<leader>te', ':term<CR>i', opts)
+vim.keymap.set('n', '<leader>tv', ':vertical split<CR>:term<CR>i', opts)
+vim.keymap.set('n', '<leader>ts', ':split<CR> :term<CR>i', opts)
 
 -------------------
 -- Terminal Mode --

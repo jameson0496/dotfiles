@@ -9,9 +9,9 @@ return {
     -- Look and feel --
     -------------------
 
-    { 
-        "navarasu/onedark.nvim", 
-        lazy = false, 
+    {
+        "navarasu/onedark.nvim",
+        lazy = false,
         config = function()
             vim.cmd([[colorscheme onedark]])
         end,
