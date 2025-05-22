@@ -10,6 +10,8 @@ return {
         config = function()
             local capabilities = vim.lsp.protocol.make_client_capabilities()
             capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+            -- enable after-text on-screen lsp diagostic codes
+            vim.diagnostic.config({ virtual_text = true})
 
             -- require("mason").setup()
             -- require("mason-lspconfig").setup {
