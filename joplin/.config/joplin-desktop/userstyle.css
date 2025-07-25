@@ -1,0 +1,87 @@
+/* For styling the rendered Markdown */
+/*
+h1-line {
+	font-size: 30px;
+	font-weight:600;
+	display:block;
+	border-top: 4px solid;
+	border-bottom: 4px solid;
+	padding: 10px;
+	width:100%;
+	text-align: center;
+	page-break-before: always;
+}
+*/
+
+@media print {
+    line-br {
+        /*display: contents;*/
+        visibility: hidden;
+        page-break-before: always;
+    }
+    hr {
+        /*display: contents;*/
+        visibility: hidden;
+        page-break-after: always;
+    }
+}
+
+.exported-note-title { display: none; }
+
+
+.katex-display > .katex {
+    text-align: left;
+}
+
+summary {
+    font-size:22px;
+    font-weight:bold;
+}
+
+/*
+    body, 
+    #rendered-md,
+    #tinymce,
+    #joplin-container-body,
+    #joplin-container-content {
+        background-color: #1d2024;
+        background: #1d2024;
+        color: #dddddd;
+    }
+		
+    .exported-note,
+    #tinymce,
+    #rendered-md,
+    #rendered-md > table > thead > tr > th,
+    #rendered-md > table > tbody > tr,
+    #rendered-md > table > thead > tr:nth-child(odd),
+    .jop-tinymce table,
+    #rendered-md .katex-display,
+    note,
+    tip,
+    explain,
+    question,
+    warning,
+    keyword,
+    important,
+    #rendered-md > p > ctb,
+    #rendered-md > .joplin-editable > pre:not(.mermaid),
+    #rendered-md .inline-code,
+    #rendered-md .spoiler-block label.spoiler-inline,
+    #rendered-md .spoiler-block *,
+    #rendered-md .spoiler-block,
+    ag2,
+    ag3,
+    ag4,
+    ag5,
+    ag6,
+    ag7,
+    ag8,
+    ag9,
+    ag10,
+    ag11,
+    ag12 {
+      background: none;
+      text-shadow: none;
+    }
+    */

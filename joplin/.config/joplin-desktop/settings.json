@@ -1,0 +1,54 @@
+{
+	"$schema": "https://joplinapp.org/schema/settings.json",
+	"sync.target": 3,
+	"locale": "en_US",
+	"dateFormat": "MM/DD/YYYY",
+	"timeFormat": "h:mm A",
+	"theme": 2,
+	"themeAutoDetect": false,
+	"editor.autoMatchingBraces": false,
+	"trackLocation": false,
+	"markdown.plugin.softbreaks": false,
+	"markdown.plugin.typographer": false,
+	"markdown.plugin.sub": false,
+	"markdown.plugin.sup": false,
+	"markdown.plugin.emoji": true,
+	"ui.layout": {
+		"key": "root",
+		"children": [
+			{
+				"key": "tempContainer-WMFYRYMjEiPFBWHKaXTZUv",
+				"children": [
+					{
+						"key": "sideBar",
+						"visible": true
+					},
+					{
+						"key": "noteList",
+						"visible": true
+					}
+				],
+				"width": 245,
+				"visible": true
+			},
+			{
+				"key": "editor",
+				"visible": true
+			}
+		],
+		"visible": true
+	},
+	"sync.interval": 600,
+	"noteVisiblePanes": [
+		"editor"
+	],
+	"editor": "st  -e nvim",
+	"export.pdfPageSize": "Letter",
+	"editor.keyboardMode": "vim",
+	"editor.spellcheckBeta": true,
+	"api.token": "fcfebab51066ede5dfcf6cbde0040987159eca1498fb0776a9946b0926b72a055e60f7509e4ab779af54453d1bf9f584b22edc8aa4639c1e2020f5fd4bd7e5ea",
+	"spellChecker.languages": [
+		"en-US"
+	],
+	"windowContentZoomFactor": 100
+}
