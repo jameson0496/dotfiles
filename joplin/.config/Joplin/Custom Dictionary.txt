@@ -10,10 +10,12 @@ Operant
 Overgeneralization
 Snapchat
 Zach
+cmd
 dodgeball
 excitatory
 maladaptive
 myelin
 overgeneralization
 psychodynamic
-checksum_v1 = a504a8b09be11fc60f48474c25192eb3
+sudo
+checksum_v1 = 2ff42885718f0af1f5b2e95dd9197295

@@ -40,7 +40,7 @@
 	},
 	"sync.interval": 600,
 	"noteVisiblePanes": [
-		"editor"
+		"viewer"
 	],
 	"editor": "st  -e nvim",
 	"export.pdfPageSize": "Letter",
