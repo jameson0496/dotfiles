@@ -11,7 +11,7 @@ return {
             local capabilities = vim.lsp.protocol.make_client_capabilities()
             capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
             -- enable after-text on-screen lsp diagostic codes
-            vim.diagnostic.config({ virtual_text = true})
+            vim.diagnostic.config({ virtual_text = true })
 
             -- require("mason").setup()
             -- require("mason-lspconfig").setup {
@@ -45,6 +45,8 @@ return {
                         },
                     }
                 },
+            }
+            require("lspconfig").texlab.setup {
             }
         end,
     },
@@ -102,6 +104,23 @@ return {
                 },
             })
         end,
+    },
+    {
+        "lervag/vimtex",
+        lazy = false, -- FIXME
+        config = function()
+            vim.g.vimtex_view_method = "zathura"
+            -- <LocalLeader>ll to compile
+            -- <LocalLeader>lv to view current line
+            -- <LocalLeader>lt to view TOC
+            vim.o.foldmethod = "expr"
+            vim.o.foldexpr = "vimtex#fold#level(v:lnum)"
+            vim.o.foldtext = "vimtex#fold#text()"
+            vim.o.foldlevel = 2
+        end,
+        keys = {
+            { "<LocalLeader>l", "", desc = "+vimtex" },
+        },
     },
     -- {
     --     "nvimtools/none-ls.nvim",
