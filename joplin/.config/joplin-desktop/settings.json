@@ -1,9 +1,11 @@
 {
 	"$schema": "https://joplinapp.org/schema/settings.json",
+	"altInstanceId": "",
 	"sync.target": 3,
 	"locale": "en_US",
 	"dateFormat": "MM/DD/YYYY",
 	"timeFormat": "h:mm A",
+	"ocr.enabled": false,
 	"theme": 2,
 	"themeAutoDetect": false,
 	"editor.autoMatchingBraces": false,
