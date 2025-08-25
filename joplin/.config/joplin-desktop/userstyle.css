@@ -24,6 +24,9 @@ h1-line {
         visibility: hidden;
         page-break-after: always;
     }
+    h1 {
+        page-break-before: always;
+    }
 }
 
 .exported-note-title { display: none; }
